@@ -9,7 +9,7 @@ a {
 }
 
 .content {
-	text-align: center
+	text-align: center;
 	padding: 0 15% 20px;
 }
 
@@ -30,7 +30,7 @@ a {
 	border: 2px solid #107394;
 	color: #107394;
 	background: transparent;
-	magrin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 .content div {
