@@ -1,8 +1,11 @@
 <!doctype html>
+<!-- I was in class when i took this quiz. i promise. -->
 <html lang="en">
 	<head>
-		<meta charset="UTF-8"
+		<meta charset="UTF-8">
 		<title>Quiz 2</title>
+		<link rel="stylesheet" href="quiz2.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	</head>
 	<body>
 		
@@ -10,28 +13,35 @@
 			<h1>Hi, Welcome to the second quiz!</h1>
 			<p>Make sure the containers below respond to the events or functions implemented with quiz2.js</p>
 			<div class="evens">			
-				<div class="click">
+				<div class="click" id="click">
 					<span>click event</span>
 				</div>
-				<div class="mouse-over">
+				<div class="mouse-over" id="mouse-over">
 					<span>mouse over event</span>
 					<p>Who's the richest person you know? (mouse over to find out)</p>
 				</div>
-				<div>
+				<div id="submit">
 					<span>submit event</span>
 					<!-- The form not having an action or method is not a bug in this case -->
 					<form>
 						<label for="form">AJAX, yo!</label>
 						<input type="text" id="form" name="form" placeholder="Enter Some Text" />
-						<input value="SUBMIT">
+						<input type="submit" value="SUBMIT">
 					</form>
 				</div>
-				div class="timeout">
+				<div class="timeout" id="timeout">
 					<span>timeout function</span>
 				</div>
 			</div>
+			<div align="center" id="addTo">
+				<button type="button" class="btn btn-primary" id="BUTTON">Get Title</button> <br/>
+				<button type="button" class="btn btn-primary" id="change">Change It</button> <br/>
+				<button type="button" class="btn btn-primary" id="keep">Keep It</button>
+				<div id="info"></div>
+			</div>
+		</div>
 		
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="quiz2.js"></script>
 	</body>
 </html>
